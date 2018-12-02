@@ -1,6 +1,6 @@
 library(shiny)
 
-# UI
+# アプリケーションのUIを定義
 ui <- fluidPage(
   
   # アプリケーションのタイトル
@@ -11,7 +11,7 @@ ui <- fluidPage(
     sidebarPanel(
       # スライダー
       sliderInput("bins",
-                  "Number of bins:",
+                  "ビンの数:",
                   min = 1,
                   max = 50,
                   value = 30)
@@ -24,7 +24,7 @@ ui <- fluidPage(
   )
 )
 
-# サーバー側
+# サーバー側ロジックを定義
 server <- function(input, output) {
   
   output$distPlot <- renderPlot({
@@ -37,6 +37,5 @@ server <- function(input, output) {
   })
 }
 
-# Run the application 
+# アプリケーションを起動する
 shinyApp(ui = ui, server = server)
-
