@@ -1,0 +1,12 @@
+name: begin-shiny-rintrojs
+title: begin-shiny-rintrojs
+username:
+account: terashim
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 599927
+bundleId: 1733997
+url: https://terashim.shinyapps.io/begin-shiny-rintrojs/
+when: 1543749497.94812
+asMultiple: FALSE
+asStatic: FALSE
